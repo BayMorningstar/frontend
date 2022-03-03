@@ -19,10 +19,7 @@
     <NuxtLink :to="`${id}/${title}`">
       <v-btn
       class="ma-2 mx-2"
-      :loading="loading"
-      :disabled="loading"
       style="secondary"
-      @click="loader = 'loading'"
       >
       Buy
       </v-btn></NuxtLink>

@@ -1,9 +1,8 @@
 <template>
+<div>
 <div class="header-2">
-
   <nav class="bg-white py-2 md:py-4">
     <div class="container px-4 mx-auto md:flex md:items-center">
-
       <div class="flex justify-between items-center">
         <NuxtLink :to="`/`">FWR</NuxtLink>
         <button class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden" id="navbar-toggle">
@@ -22,5 +21,6 @@
       </div>
     </div>
   </nav>
+</div>
 </div>
 </template>

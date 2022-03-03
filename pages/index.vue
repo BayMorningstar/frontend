@@ -1,9 +1,9 @@
 <template>
 <main>
-<Body/>
+<hero-section/>
 <div>
-<div class="z-10" data-aos="slide-right" v-for="item in mountains.data">
-    <Card v-bind:title="item.attributes.title" v-bind:description="item.attributes.description" v-bind:id="item.id"/>
+<div class="z-10" data-aos="slide-right" v-for="item in mountains.data" :key="item">
+    <card v-bind:title="item.attributes.title" v-bind:description="item.attributes.description" v-bind:id="item.id"/>
 </div>
 </div>
 </main>
@@ -18,12 +18,10 @@ export default {
       }
   },
     async fetch() {
-    this.mountains = await fetch("http://localhost:1337/api/cards").then(res =>
+    this.mountains = await fetch("http://0.0.0.0:4040/api/cards").then(res =>
       res.json()
       )
     },
-   props: {
-    card: Array
-  }
+
   }
 </script>
