@@ -18,7 +18,7 @@ export default {
       }
   },
     async fetch() {
-    this.mountains = await fetch("http://0.0.0.0:4040/api/cards").then(res =>
+    this.mountains = await fetch("http://halimceylan.com:1337/api/cards").then(res =>
       res.json()
       )
     },

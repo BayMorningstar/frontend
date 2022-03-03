@@ -97,7 +97,7 @@ export default {
       
   },
     async asyncData({ params }){
-      const mountains =  await fetch("http://0.0.0.0:4040/api/cards").then(res =>res.json())
+      const mountains =  await fetch("http://halimceylan.com:1337/api/cards").then(res =>res.json())
       const id = parseInt(params.id)
       return{id,mountains}
     },
